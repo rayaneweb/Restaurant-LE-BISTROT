@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact - Le Bistrot</title>
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style_contact.css">
+</head>
+
+<body>
+    <!-- Préchargeur -->
+    <div class="preload" id="preloader">
+        <div class="circle"></div>
+        <p class="preload-text">LE BISTROT</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="./index.html" style="text-decoration: none;">
+            <h2 class="logo">Le Bistrot</h2>
+        </a>
+        <ul class="navBar">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./Menu.html">Menu</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes là pour répondre à toutes vos questions</p>
+    </div>
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <h2 class="section-title">Prenez Contact</h2>
+        
+        <div class="contact-container">
+            <!-- Formulaire de contact -->
+            <div class="contact-form">
+                <h3 style="margin-bottom: 1.5rem; color: #333;">Envoyez-nous un message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" placeholder="Votre nom et prénom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" placeholder="+213 XX XX XX XX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+            
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1.5rem; color: #333;">Informations de contact</h3>
+                
+                <div class="info-item">
+                    <h3>Adresse</h3>
+                    <p>18 Rue la tour, Tizi-Ouzou, 15000, ALGERIE</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+213500114488">+213 5 00 11 44 88</a></p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:restaurant_bistrot@gmail.com">restaurant_bistrot@gmail.com</a></p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                            <img src="./images/instagram.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://web.facebook.com/" class="social-link" target="_blank">
+                            <img src="./images/fb.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://fr.linkedin.com/" class="social-link" target="_blank">
+                            <img src="./images/linkedin.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carte -->
+        <div class="map-section">
+            <h3 style="margin-bottom: 1rem; color: #333;">Trouvez-nous</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818618.9070713964!2d2.588388525246168!3d36.72904268275846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc8121676bbe5%3A0x5480cf30369914cf!2sLA%20TOUR!5e0!3m2!1sfr!2sdz!4v1715239869483!5m2!1sfr!2sdz" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <img src="./images/le bistrot (1).png" alt="Logo Le Bistrot">
+            <div class="footer-info">
+                <p>Rue la tour, 15000 Tizi Ouzou</p>
+                <p>Tél: 05 00 11 44 88</p>
+                <p>Ouvert du samedi au dimanche : 12:00-14:30 et 19:00-22:30 (Fermé le vendredi)</p>
+                <p>Service voiturier disponible en soirée le jeudi, samedi et dimanche (Coût 2000 DA)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS commun à toutes les pages -->
+    <script src="./js/script.js" defer></script>
+    
+    <!-- JS spécifique à la page contact -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion du formulaire de contact
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupérer les valeurs
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Ici, vous ajouteriez le code pour envoyer les données au serveur
+                    // Pour l'instant, on simule l'envoi
+                    alert('Merci ' + name + ' ! Votre message a été envoyé. Nous vous répondrons bientôt à ' + email);
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
